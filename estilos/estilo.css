@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Josefin+Sans:wght@700&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Indie+Flower&family=Josefin+Sans:wght@700&family=Shadows+Into+Light&display=swap');
+
+*{
+    margin:0px ;
+    padding:0px ;
+}
+body{
+    background:  rgb(215, 197, 248) url(../imagenes/a8.jpg);
+    padding: 1% 5% 5% 5%;
+    background-attachment: fixed;
+    background-position: 1%;
+}
+/*oscuroclaro*/
+button{
+  border: 0px;
+}
+.oscuroclaro1 {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.oscuroclaro{
+  background-color: white ;
+  width: 5vw;
+  border-radius: 50%;
+}
+.oscuroclaro :hover{
+    width: 6vw;
+  }
+
+/*cabezal*/
+header{
+    display: flex ;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.logo{
+    display: flex;
+    order: -1;
+    width: 25vh;
+    border-radius: 30%;
+    margin: 1%;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+    
+}
+h1{
+    font-size: 100px;
+    font-family: Indie Flower;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+    text-decoration: underline;
+}
+
+/*menu*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(92, 212, 182);
+    height: 10%;
+    border-radius: 10px; 
+}
+.otros{
+    background: rgb(92, 212, 182);
+    font-size: 2rem;
+    color: black;
+}
+.otros:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+    transform: translatey(-5%);
+    padding: 5px;
+    background: rgb(177, 245, 228);
+    border-radius: 5px;
+
+}
+/*section presentacion*/
+
+.tex{
+    font-size: 40px;
+    line-height: 50px;
+    color: rgb(54, 1, 179);
+    font-family: Indie Flower;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.205);
+    margin: 5%;
+}
+/*secciones*/
+.sec{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.par{
+    font-size: 3vw;
+    width: 40%;
+    background-color: rgba(135, 191, 240, 0.301);
+    text-align: center;
+    padding: 3%;
+}
+h2{
+    font-size: 60px;
+    margin: 5%;
+    text-decoration: underline overline;
+    font-family: Caveat;
+    text-align: center;
+}
+figure{
+    background: white;
+    padding: 5px;
+    border-radius: 3%;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+.fot{
+    width: 100%;
+}
+/*pie de pagina*/
+footer{
+    text-align: center;
+    background: rgba(115, 177, 141, 0.534);
+    padding: 10px;
+    margin: 30px;
+}
+.was{
+    position: fixed;
+    bottom: 5%;
+    right: 1%;
+}
+.pintor{
+    position: fixed;
+    bottom: 25%;
+    left: 1%;
+    width: 12vw;
+}
+/*recomendaciones*/
+.descri{
+    order: -1;
+}
+.vid{
+    width: 50%;
+}
+
+/*adaptacion pantalla 991*/
+@media (max-width: 991px) {
+    h1{ font-size: 60px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    .medios{
+        width: 30vw;
+    }
+    nav{
+        height: 8vh;
+    }
+    .otros{
+        font-size: 22px;
+    }
+    }
+    .tex{
+        font-size: 30px;
+        line-height: 32px;
+        color: rgb(90, 54, 122);
+    }
+   
+   
+   
+  @media (min-width: 991px) {
+    .pintor{
+        display: none;
+    }
+    }
+
+/* adaptacion a pantalla 768px*/
+
+@media (max-width: 768px) {
+    h1{ font-size: 55px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    .medios{
+        width: 40vw;
+    }
+    nav{
+        height: 10vh;
+    }
+    .otros{
+        font-size: 22px;
+    }
+    .tex{
+        font-size: 20px;
+        line-height: 30px;
+        color: rgb(0, 0, 0);
+    }
+    .par{
+        width: 60%;
+    }
+      
+    }
+
+ /*adaptacion pantalla 575px*/
+@media (max-width: 575px) {
+    h1{ font-size: 50px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    nav{
+        height: 5vh;
+    }
+    .otros{
+        font-size: 15px;
+    }
+    
+    .tex{
+        font-size: 20px;
+        line-height: 20px;
+        width: 100%;
+        color: rgb(23, 4, 41);
+    }
+    .vid{
+        width: 100%;
+    }
+   .descri{
+        width: 100%;
+    }
+    .sec{
+        flex-direction: column;
+    }    
+    .medi :hover{
+        width: 40px;
+    }
+    .was{
+        width: 50px;
+    }
+    .logo{
+        width: 80%;
+    }
+    .par{
+        width: 100%;
+    }
+    .fot{
+        width: 100%;
+    }
+  } 
